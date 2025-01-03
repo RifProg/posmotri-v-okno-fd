@@ -26,6 +26,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-items: center;
   gap: 30px;
   max-height: 534px;
   
@@ -35,6 +36,7 @@ html {
 
 
 .result {
+  margin-bottom: 30px;
   align-self: center;
 
 
@@ -44,7 +46,7 @@ html {
   display: flex;
   height: 386px;
   width: 711px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   position:relative;
 }
 
@@ -59,8 +61,17 @@ html {
 
 /* Content Details */
 
+
+.content__details {
+  
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+}
+
 .title {
-  margin-top: 25px;
   font-family: Oswald;
   font-size: 75px;
   font-weight: 700;
@@ -69,18 +80,9 @@ html {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
-
+  margin-bottom: 26px;
 }
 
-
-.content__details {
-  
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  gap: 26px;
-}
 
 
 .content__list-container {
@@ -93,9 +95,6 @@ html {
 
 .content__list {
   
-  
- 
-  padding-top: 5px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -243,7 +242,7 @@ fieldset {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
+  margin-bottom: 5px;
 }
 
 .search-form__fieldset {
@@ -251,6 +250,18 @@ fieldset {
   border: none;
 }
 
+
+input::placeholder {
+
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
 
 .search-form__label:has(:focus-visible) {
 
@@ -272,6 +283,7 @@ fieldset {
   font-family: inherit;
   font-size: inherit;
   appearance: none;
+  margin-right: 5px;
 }
 
 .search-form__textfield:has(:focus) {
@@ -291,7 +303,7 @@ fieldset {
   flex-direction: row;
   justify-content: center;
   align-content: center ;
-  gap: 20px;
+  gap: 10px;
   
 }
 
@@ -327,6 +339,7 @@ fieldset {
 .search-form__label {
 
   display:flex;
+  
   width: fit-content;
   cursor: pointer;
   gap: 5px;
@@ -391,8 +404,10 @@ fieldset {
 .search-form__submit-button {
   min-width: 194px;
   min-height: 34px;
-  margin: 7px 0;
+  
   align-self: end;
+  
+  
 }
 
 .more-button {
