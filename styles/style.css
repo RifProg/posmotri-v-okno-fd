@@ -132,17 +132,12 @@ html {
   
 }
 
-.content__video-card-thumbnail{
+.content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
   width: 194px;
   height: 103px;
 }
-
-.content__video-card-description-container{
-  flex-wrap: wrap;
-}
-
 
 .content__accent {
   color: #545050;
@@ -198,9 +193,10 @@ html {
 }
 
 .content__video-card-description-container {
-
+  flex-wrap: wrap;
   max-width: 196px;
 }
+
 
 .content__video-card-description {
   
@@ -214,6 +210,8 @@ html {
   line-clamp: 1;
   
 }
+
+
 
 
 /* Search Form Textfield*/
@@ -443,15 +441,6 @@ input::placeholder {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-
-
-.preloader {
-  position: absolute;
-}
-
-
-
-
 
 
 
