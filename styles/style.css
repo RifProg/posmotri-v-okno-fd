@@ -309,8 +309,8 @@ input::placeholder {
   outline: none;
 }
 
-.search-form__label:hover .search-form__label-text { 
-  text-decoration: underline; 
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__label-text:has(search-form__textfield:focus-visible) {
